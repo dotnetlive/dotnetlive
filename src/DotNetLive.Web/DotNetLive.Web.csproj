@@ -1,13 +1,16 @@
-<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk.Web">
-
+﻿<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
-
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Content Include="wwwroot\default\css\site.css" />
+    <Content Include="wwwroot\default\css\site.min.css" />
+    <Content Include="wwwroot\default\js\site.js" />
+    <Content Include="wwwroot\default\js\site.min.js" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0-beta1" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
@@ -19,5 +22,4 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
-
 </Project>
