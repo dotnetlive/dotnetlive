@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using DotNetLive.Framework.DependencyManagement;
 
 namespace DotNetLive.Web
 {
@@ -25,10 +26,16 @@ namespace DotNetLive.Web
         public IConfigurationRoot Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
-            services.AddMvc();
+            var env = services.BuildServiceProvider().GetService<IHostingEnvironment>();
+            services.AddSingleton<IServiceCollection>(factory => services);
+            //services.AddSingleton<IContainer>(factory => ApplicationContainer);
+            services.AddSingleton<IConfigurationRoot>(factory => Configuration);
+
+            //先通过asp.net core ioc注册
+            services.AddDependencyRegister(Configuration);
+            return services.BuildServiceProvider();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +55,8 @@ namespace DotNetLive.Web
             }
 
             app.UseStaticFiles();
+
+            app.UseIdentity();
 
             app.UseMvc(routes =>
             {
