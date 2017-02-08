@@ -1,0 +1,16 @@
+[Unit]
+    Description=Example .NET Web API Application running on Ubuntu
+
+    [Service]
+    WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.website
+    ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.website/DotNetLive.Web.dll
+    Restart=always
+    RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
+    SyslogIdentifier=dotnet-example
+    User=www-data
+    Environment=ASPNETCORE_ENVIRONMENT=Production
+    Environment=ASPNETCORE_URLS=http://127.0.0.1:8002
+
+    [Install]
+    WantedBy=multi-user.target
+
