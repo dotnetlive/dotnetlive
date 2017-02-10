@@ -32,7 +32,7 @@ namespace DotNetLive.Web.Controllers
         [AllowAnonymous]
         public ActionResult Register(string returnUrl)
         {
-            return Redirect($"{LoginUrl}?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
+            return Redirect($"{LoginUrl}/account/register?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
         }
 
         [Authorize]
