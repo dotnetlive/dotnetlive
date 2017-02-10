@@ -1,0 +1,16 @@
+[Unit]
+Description=DotNet.Live Blogs
+
+[Service]
+WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.blogs
+ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.blogs/DotNetLive.BlogsWeb.dll
+Restart=always
+RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
+SyslogIdentifier=dnl-blogs
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://127.0.0.1:8005
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,15 +1,15 @@
 [Unit]
-Description=DotNet.Live WebSite
+Description=DotNet.Live ForumsWeb
 
 [Service]
 WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.website
 ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.website/DotNetLive.Web.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dnl-website
+SyslogIdentifier=dnl-forms
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
-Environment=ASPNETCORE_URLS=http://127.0.0.1:8002
+Environment=ASPNETCORE_URLS=http://127.0.0.1:8004
 
 [Install]
 WantedBy=multi-user.target
