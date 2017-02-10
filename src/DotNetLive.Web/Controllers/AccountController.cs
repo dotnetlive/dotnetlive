@@ -19,7 +19,7 @@ namespace DotNetLive.Web.Controllers
         [AllowAnonymous]
         public ActionResult Login(string userNameOrEmailAddress = "", string returnUrl = "", string successMessage = "")
         {
-            return Redirect($"{_securitySettings.LoginUrl}/account/login?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
+            return Redirect($"{LoginUrl}/account/login?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
         }
 
         private string GetEncodeReturlUrl(string returnUrl)
@@ -32,17 +32,23 @@ namespace DotNetLive.Web.Controllers
         [AllowAnonymous]
         public ActionResult Register(string returnUrl)
         {
-            return Redirect($"{_securitySettings.LoginUrl}?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
+            return Redirect($"{LoginUrl}?returnUrl={ GetEncodeReturlUrl(returnUrl)}");
         }
 
         [Authorize]
         public ActionResult LogOff(string returnUrl = "")
         {
-            //AuthorizationService.Instance.ClearAuthorizationCache(ApplicationUser.UserId);//ÒÆ³ýUser Permission Cache
-            //var authenticationManger = HttpContext.GetOwinContext().Authentication;
-            //authenticationManger.SignOut(DefaultAuthenticationTypes.ExternalCookie);
-            //authenticationManger.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return Redirect($"{_securitySettings.LoginUrl}/account/logoff?returnUrl={GetEncodeReturlUrl(returnUrl)}");
+            return Redirect($"{LoginUrl}/account/logoff?returnUrl={GetEncodeReturlUrl(returnUrl)}");
         }
+
+        [Authorize]
+        public ActionResult Manager()
+        {
+            return Redirect($"{LoginUrl}/manager");
+        }
+
+        #region Util
+        public string LoginUrl => _securitySettings.LoginUrl.TrimEnd('/');
+        #endregion
     }
 }
