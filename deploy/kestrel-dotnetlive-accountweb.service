@@ -1,12 +1,12 @@
 [Unit]
-Description=DotNet.Live Account
+Description=DotNet.Live AccountWeb
 
 [Service]
-WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.account
-ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.account/DotNetLive.AccountWeb.dll
+WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.accountweb
+ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.accountweb/DotNetLive.AccountWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dn-account
+SyslogIdentifier=dn-accountweb
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=ASPNETCORE_URLS=http://127.0.0.1:8003
