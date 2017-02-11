@@ -2,11 +2,11 @@
 Description=DotNet.Live ForumsWeb
 
 [Service]
-WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.forms
-ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.forms/DotNetLive.FormsWeb.dll
+WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.forums
+ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.forums/DotNetLive.ForumsWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dnl-forms
+SyslogIdentifier=dnl-forums
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=ASPNETCORE_URLS=http://127.0.0.1:8004
