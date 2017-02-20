@@ -2,8 +2,8 @@
 Description=DotNet.Live AdminApi
 
 [Service]
-WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.adminweb
-ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.adminweb/DotNetLive.AdminWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.adminweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.adminweb/DotNetLive.AdminWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dnl-adminweb

@@ -2,8 +2,8 @@
 Description=DotNet.Live AccountWeb
 
 [Service]
-WorkingDirectory=/var/dotnetlive/pubsite/dotnetlive.accountweb
-ExecStart=/usr/local/bin/dotnet /var/dotnetlive/pubsite/dotnetlive.accountweb/DotNetLive.AccountWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.accountweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.accountweb/DotNetLive.AccountWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dn-accountweb
