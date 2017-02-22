@@ -1,16 +1,15 @@
-[Unit]
-Description=DotNet.Live Career
-
-[Service]
-WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.career
-ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.career/DotNetLive.CareerWeb.dll
-Restart=always
-RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dnl-career
-User=www-data
-Environment=ASPNETCORE_ENVIRONMENT=Production
-Environment=ASPNETCORE_URLS=http://127.0.0.1:8006
-
-[Install]
-WantedBy=multi-user.target
-
+{
+    "SecuritySettings": {
+        "DomainName": ".dotnet.live",
+        "DataProtectionPath": "/data/dotnetlive/dpkeys",
+        "LoginUrl": "http://account.dotnet.live/"
+    },
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Debug",
+            "System": "Information",
+            "Microsoft": "Information"
+        }
+    }
+}
