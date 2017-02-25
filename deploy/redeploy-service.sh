@@ -1,5 +1,5 @@
-find kestrel-dotnetlive-*.service -exec systemctl enable {} \;
+find /etc/systemd/system/kestrel-dotnetlive-*.service -exec systemctl enable {} \;
 
 cp kestrel-dotnetlive-* /etc/systemd/system
 
-find kestrel-dotnetlive-*.service -exec systemctl disable {} \;
+find /etc/systemd/system/kestrel-dotnetlive-*.service -exec systemctl disable {} \;
