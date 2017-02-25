@@ -1,13 +1,16 @@
 {
-  "name": "asp.net",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "3.3.7",
-    "jquery": "2.2.0",
-    "jquery-validation": "1.14.0",
-    "jquery-validation-unobtrusive": "3.2.6",
-    "font-awesome": "fontawesome#^4.7.0",
-    "jquery-migrate": "^3.0.0",
-    "jquery-backstretch": "backstretch#^2.0.4"
-  }
+    "name": "dotnetlive.website",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "3.3.7",
+        "jquery": "2.2.0",
+        "jquery-validation": "1.14.0",
+        "jquery-validation-unobtrusive": "3.2.6",
+        "font-awesome": "fontawesome#^4.7.0",
+        "jquery-migrate": "^3.0.0",
+        "jquery-backstretch": "backstretch#^2.0.4"
+    },
+    "resolutions": {
+        "jquery": "1.9.1 - 3"
+    }
 }
