@@ -6,7 +6,7 @@ WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.accountapi
 ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.accountapi/DotNetLive.AccountApi.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dn-accountapi
+SyslogIdentifier=dnl-accountapi
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=ASPNETCORE_URLS=http://127.0.0.1:9003

@@ -6,7 +6,7 @@ WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.exam
 ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.exam/DotNetLive.ExamWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
-SyslogIdentifier=dnl-exam
+SyslogIdentifier=dnl-examweb
 User=www-data
 Environment=ASPNETCORE_ENVIRONMENT=Production
 Environment=ASPNETCORE_URLS=http://127.0.0.1:8007

@@ -1,0 +1,16 @@
+[Unit]
+Description=DotNet.Live SearchWeb
+
+[Service]
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.searchweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.searchweb/DotNetLive.SearchWeb.dll
+Restart=always
+RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
+SyslogIdentifier=dnl-searchweb
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://127.0.0.1:8009
+
+[Install]
+WantedBy=multi-user.target
+
