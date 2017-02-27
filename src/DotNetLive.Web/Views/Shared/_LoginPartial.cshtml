@@ -3,23 +3,22 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 
+@{ var currentUrl = Context.Request.Path.Value + Context.Request.QueryString.Value; }
 @if (SignInManager.IsSignedIn(User))
 {
-    <form asp-area="" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="http://account.dotnet.live/manager/" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            </li>
-            <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log out</button>
-            </li>
-        </ul>
-    </form>
+    <ul class="topbar-list topbar-log_reg pull-right visible-sm-block visible-md-block visible-lg-block">
+        <li class="cd-log_reg home"><a class="cd-signin" href="#">欢迎 @UserManager.GetUserName(User)!</a></li>
+        <li class="cd-log_reg">
+            <a class="cd-signup" asp-controller="Account" asp-action="LogOff" asp-returnUrl="@currentUrl">注销</a>
+        </li>
+    </ul>
 }
 else
 {
-    <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-        <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
+    <ul class="topbar-list topbar-log_reg pull-right visible-sm-block visible-md-block visible-lg-block">
+        <li class="cd-log_reg home"><a class="cd-signin" asp-controller="Account" asp-action="Login" asp-returnUrl="@currentUrl">Login</a></li>
+        <li class="cd-log_reg">
+            <a class="cd-signup" asp-controller="Account" asp-action="Register" asp-returnUrl="@currentUrl">Register</a>
+        </li>
     </ul>
 }
