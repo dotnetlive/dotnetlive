@@ -60,6 +60,13 @@ namespace DotNetLive.Web
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(name: "areaRoute", template: "{area:exists}/{controller=Home}/{action=Index}");
+                #region Sitemap 站点地图部分
+                routes.MapRoute(name: "RebotsPolicy", template: "robots.txt", defaults: new { controller = "Seo", action = "RobotsPolicy" });
+                routes.MapRoute(name: "GeneralSitemap", template: "generalsitemap.xml", defaults: new { controller = "Seo", action = "GeneralSitemap" });
+                routes.MapRoute(name: "SitemapIndex", template: "sitemap.xml", defaults: new { controller = "Seo", action = "Sitemap" });
+                #endregion
+
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
