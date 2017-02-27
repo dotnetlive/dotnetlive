@@ -28,8 +28,8 @@
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-              crossorigin="anonymous" />
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" />
         <link rel="stylesheet" href="~/assets/css/style.css" asp-append-version="true" />
     </environment>
     <!--<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
@@ -46,7 +46,8 @@
     <link rel="stylesheet" href="~/assets/plugins/parallax-slider/css/parallax-slider.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/assets/plugins/fancybox/source/jquery.fancybox.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css" asp-append-version="true" />
-
+    <!-- CSS Page Level -->
+    @RenderSection("Styles", required: false)
     <!-- CSS Theme -->
     <link rel="stylesheet" href="~/assets/css/theme-colors/default.css" id="style_color">
     <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css" asp-append-version="true" />
@@ -72,7 +73,8 @@
         @await Html.PartialAsync("_Footer")
         <!--=== End Footer v8 ===-->
         <!-- Login/Reg Modal Box -->
-        @*<div class="cd-user-modal">
+        @*
+        <div class="cd-user-modal">
             <!-- this is the entire modal form, including the background -->
             <div class="cd-user-modal-container">
                 <!-- this is the container wrapper -->
@@ -280,12 +282,12 @@
     </environment>
     <environment names="Staging,Production">
         <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
-                crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="~/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+            </script>
+            <script src="~/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
+            <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
+                </script>
     </environment>
     <!--<script type="text/javascript" src="/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
     <script type="text/javascript" src="/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
