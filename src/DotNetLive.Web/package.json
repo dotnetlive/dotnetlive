@@ -9,10 +9,12 @@
   "author": "dotnet.live",
   "license": "GPL V3",
   "devDependencies": {
+    "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-uglify": "^1.5.4",
+    "minimatch": "^3.0.3",
     "rimraf": "^2.5.4"
   }
 }
