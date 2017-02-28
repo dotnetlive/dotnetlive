@@ -1,20 +1,10 @@
 {
-  "name": "dotnetlive.website",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "3.3.7",
-    "jquery": "3.0.0",
-    "jquery-validation": "1.14.0",
-    "jquery-validation-unobtrusive": "3.2.6",
-    "font-awesome": "fontawesome#^4.7.0",
-    "jquery-migrate": "3.0.0",
-    "jquery-backstretch": "backstretch#^2.0.4",
-    "owl.carousel": "^2.2.0",
-    "owl-carousel-v1": "^1.3.3"
-  },
-  "resolutions": {
-    "jquery": "3.0.0",
-    "owl-carousel-v1": "1.3.1",
-    "jquery-migrate": "3.0.0"
-  }
+    "name": "dotnetlive.website",
+    "private": true,
+    "dependencies": {
+
+    },
+    "resolutions": {
+
+    }
 }

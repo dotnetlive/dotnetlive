@@ -23,37 +23,37 @@
 
     <!-- CSS Global Compulsory -->
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/assets/css/style.css" asp-append-version="true" />
+        <link rel="stylesheet" href="//static.dotnet.live/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
+        <link rel="stylesheet" href="//static.dotnet.live/assets/css/style.css" asp-append-version="true" />
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" asp-fallback-href="//static.dotnet.live/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
               crossorigin="anonymous" />
-        <link rel="stylesheet" href="~/assets/css/style.css" asp-append-version="true" />
+        <link rel="stylesheet" href="//static.dotnet.live/assets/css/style.css" asp-append-version="true" />
     </environment>
     <!--<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" asp-append-version="true" />
     <link rel="stylesheet" href="assets/css/style.css" asp-append-version="true" />-->
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="~/assets/css/headers/header-v8.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/css/footers/footer-v8.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/css/headers/header-v8.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/css/footers/footer-v8.css" asp-append-version="true" />
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="~/assets/plugins/animate.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/plugins/line-icons/line-icons.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/plugins/login-signup-modal-window/css/style.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/plugins/parallax-slider/css/parallax-slider.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/plugins/fancybox/source/jquery.fancybox.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/animate.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/line-icons/line-icons.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/lib/font-awesome/css/font-awesome.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/login-signup-modal-window/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/parallax-slider/css/parallax-slider.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/fancybox/source/jquery.fancybox.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css" asp-append-version="true" />
     <!-- CSS Page Level -->
     @RenderSection("Styles", required: false)
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="~/assets/css/theme-colors/default.css" id="style_color">
-    <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//static.dotnet.live/assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="//static.dotnet.live/assets/css/theme-skins/dark.css" asp-append-version="true" />
 
     <!-- CSS Customization -->
-    <link rel="stylesheet" href="~/assets/css/custom.css" asp-append-version="true" /> @Html.Raw(JavaScriptSnippet.FullScript)
+    <link rel="stylesheet" href="//static.dotnet.live/assets/css/custom.css" asp-append-version="true" /> @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 
 <body class="header-fixed header-fixed-space-v2">
@@ -274,16 +274,16 @@
     <!--=== End Style Switcher ===-->
     <!-- JS Global Compulsory -->
     <environment names="Development">
-        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
+        <script src="//static.dotnet.live/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+        <script src="//static.dotnet.live/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
+        <script src="//static.dotnet.live/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
+        <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js" asp-fallback-src="//static.dotnet.live/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
                 crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
-        <script src="~/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+        <script src="//static.dotnet.live/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-fallback-src="//static.dotnet.live/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
     </environment>
@@ -291,23 +291,23 @@
     <script type="text/javascript" src="/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
     <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>-->
     <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="~/assets/plugins/back-to-top.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/assets/plugins/smoothScroll.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/assets/plugins/modernizr.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/assets/plugins/login-signup-modal-window/js/main.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/back-to-top.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/smoothScroll.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/modernizr.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/login-signup-modal-window/js/main.js" asp-append-version="true"></script>
     <!-- Gem jQuery -->
-    <script type="text/javascript" src="~/assets/plugins/jquery.parallax.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/assets/plugins/fancybox/source/jquery.fancybox.pack.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/lib/owl-carousel-v1/owl-carousel/owl.carousel.min.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/jquery.parallax.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/assets/plugins/fancybox/source/jquery.fancybox.pack.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="//static.dotnet.live/lib/owl-carousel-v1/owl-carousel/owl.carousel.min.js" asp-append-version="true"></script>
     <!-- JS Customization --
     <script type="text/javascript" src="asets/js/custom.js" asp-append-version="true"></script>
     <!-- JS Page Level -->
     @RenderSection("Scripts", required: false)
 
     <!--[if lt IE 9]>
-    <script src="~/assets/plugins/respond.js" asp-append-version="true"></script>
-    <script src="~/assets/plugins/html5shiv.js" asp-append-version="true"></script>
-    <script src="~/assets/plugins/placeholder-IE-fixes.js" asp-append-version="true"></script>
+    <script src="//static.dotnet.live/assets/plugins/respond.js" asp-append-version="true"></script>
+    <script src="//static.dotnet.live/assets/plugins/html5shiv.js" asp-append-version="true"></script>
+    <script src="//static.dotnet.live/assets/plugins/placeholder-IE-fixes.js" asp-append-version="true"></script>
     <![endif]-->
 </body>
 
