@@ -70,131 +70,6 @@
         <!--=== Footer v8 ===-->
         @await Html.PartialAsync("_Footer")
         <!--=== End Footer v8 ===-->
-        <!-- Login/Reg Modal Box -->
-        @*
-            <div class="cd-user-modal">
-                <!-- this is the entire modal form, including the background -->
-                <div class="cd-user-modal-container">
-                    <!-- this is the container wrapper -->
-                    <ul class="cd-switcher">
-                        <li><a href="javascript:void(0);">Login</a></li>
-                        <li><a href="javascript:void(0);">Register</a></li>
-                    </ul>
-
-                    <div id="cd-login">
-                        <!-- log in form -->
-                        <form class="cd-form">
-                            <p class="social-login">
-                                <span class="social-login-facebook"><a href="#"><i class="fa fa-facebook"></i> Facebook</a></span>
-                                <span class="social-login-google"><a href="#"><i class="fa fa-google"></i> Google</a></span>
-                                <span class="social-login-twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></span>
-                            </p>
-
-                            <div class="lined-text">
-                                <span>Or use your account on Unify</span>
-                                <hr>
-                            </div>
-
-                            <p class="fieldset">
-                                <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                                <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <label class="image-replace cd-password" for="signin-password">Password</label>
-                                <input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Password">
-                                <a href="javascript:void(0);" class="hide-password">Hide</a>
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <input type="checkbox" id="remember-me" checked>
-                                <label for="remember-me">Remember me</label>
-                            </p>
-
-                            <p class="fieldset">
-                                <input class="full-width" type="submit" value="Login">
-                            </p>
-                        </form>
-
-                        <p class="cd-form-bottom-message"><a href="javascript:void(0);">Forgot your password?</a></p>
-                        <!-- <a href="javascript:void(0);" class="cd-close-form">Close</a> -->
-                    </div>
-                    <!-- cd-login -->
-
-                    <div id="cd-signup">
-                        <!-- sign up form -->
-                        <form class="cd-form">
-                            <p class="social-login">
-                                <span class="social-login-facebook"><a href="#"><i class="fa fa-facebook"></i> Facebook</a></span>
-                                <span class="social-login-google"><a href="#"><i class="fa fa-google"></i> Google</a></span>
-                                <span class="social-login-twitter"><a href="#"><i class="fa fa-twitter"></i> Twitter</a></span>
-                            </p>
-
-                            <div class="lined-text">
-                                <span>Or register your new account on Unify</span>
-                                <hr>
-                            </div>
-
-                            <p class="fieldset">
-                                <label class="image-replace cd-username" for="signup-username">Username</label>
-                                <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <label class="image-replace cd-email" for="signup-email">E-mail</label>
-                                <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <label class="image-replace cd-password" for="signup-password">Password</label>
-                                <input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Password">
-                                <a href="javascript:void(0);" class="hide-password">Hide</a>
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <input type="checkbox" id="accept-terms">
-                                <label for="accept-terms">I agree to the <a href="javascript:void(0);">Terms</a></label>
-                            </p>
-
-                            <p class="fieldset">
-                                <input class="full-width has-padding" type="submit" value="Create account">
-                            </p>
-                        </form>
-
-                        <!-- <a href="javascript:void(0);" class="cd-close-form">Close</a> -->
-                    </div>
-                    <!-- cd-signup -->
-
-                    <div id="cd-reset-password">
-                        <!-- reset password form -->
-                        <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-                        <form class="cd-form">
-                            <p class="fieldset">
-                                <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                                <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                                <span class="cd-error-message">Error message here!</span>
-                            </p>
-
-                            <p class="fieldset">
-                                <input class="full-width has-padding" type="submit" value="Reset password">
-                            </p>
-                        </form>
-
-                        <p class="cd-form-bottom-message"><a href="javascript:void(0);">Back to log-in</a></p>
-                    </div>
-                    <!-- cd-reset-password -->
-                    <a href="javascript:void(0);" class="cd-close-form">Close</a>
-                </div>
-                <!-- cd-user-modal-container -->
-            </div>*@
-        <!-- cd-user-modal -->
-        <!-- End Login/Reg Modal Box -->
     </div>
     <!--/wrapper-->
     <!--=== Style Switcher ===-->
@@ -224,7 +99,7 @@
             </ul>
 
             <!-- Theme Skins -->
-            <div class="style-switcher-heading">Theme Skins</div>
+            <!--<div class="style-switcher-heading">Theme Skins</div>
             <div class="row no-col-space margin-bottom-20 skins-section">
                 <div class="col-xs-6">
                     <button data-skins="default" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light</button>
@@ -234,10 +109,10 @@
                 </div>
             </div>
 
-            <hr>
+            <hr>-->
 
             <!-- Layout Styles -->
-            <div class="style-switcher-heading">Layout Styles</div>
+            <!--<div class="style-switcher-heading">Layout Styles</div>
             <div class="row no-col-space margin-bottom-20">
                 <div class="col-xs-6">
                     <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>
@@ -247,10 +122,10 @@
                 </div>
             </div>
 
-            <hr>
+            <hr>-->
 
             <!-- Theme Type -->
-            <div class="style-switcher-heading">Theme Types and Versions</div>
+            <!--<div class="style-switcher-heading">Theme Types and Versions</div>
             <div class="row no-col-space margin-bottom-10">
                 <div class="col-xs-6">
                     <a href="E-Commerce/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">Shop UI <small class="dp-block">Template</small></a>
@@ -267,7 +142,7 @@
                 <div class="col-xs-6">
                     <a href="RTL/index.html" class="btn-u btn-u-xs btn-u-dark btn-block">RTL <small class="dp-block">Version</small></a>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
     <!--/style-switcher-->
@@ -279,12 +154,14 @@
         <script src="//static.dotnet.live/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="//cdn.bootcss.com/jquery/2.2.0/jquery.min.js" asp-fallback-src="//static.dotnet.live/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
-                crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js" asp-fallback-src="//static.dotnet.live/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery"
+                crossorigin="anonymous">
         </script>
-        <script src="//static.dotnet.live/lib/jquery-migrate/jquery-migrate.js" asp-append-version="true"></script>
+        <script src="//cdn.bootcss.com/jquery-migrate/3.0.0/jquery-migrate.min.js" asp-fallback-src="//static.dotnet.live/lib/jquery-migrate/jquery-migrate.js" asp-fallback-test="jQuery.migrateVersion"
+                crossorigin="anonymous">
+        </script>
         <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" asp-fallback-src="//static.dotnet.live/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+                crossorigin="anonymous">
         </script>
     </environment>
     <!--<script type="text/javascript" src="/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
