@@ -32,6 +32,7 @@ namespace DotNetLive.Web
             services.AddSingleton<IServiceCollection>(factory => services);
             //services.AddSingleton<IContainer>(factory => ApplicationContainer);
             services.AddSingleton<IConfigurationRoot>(factory => Configuration);
+            services.AddTrace();
 
             //先通过asp.net core ioc注册
             services.AddDependencyRegister(Configuration);
@@ -53,6 +54,10 @@ namespace DotNetLive.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            //app.UseClaimsTransformation();
+            app.UseTraceCapture();
+            app.UseTracePage();
 
             app.UseStaticFiles();
 

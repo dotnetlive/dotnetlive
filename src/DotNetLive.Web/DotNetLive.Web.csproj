@@ -17,6 +17,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\dotnetlive.framework\src\DotNetLive.Framework.Diagnostics.Trace\DotNetLive.Framework.Diagnostics.Trace.csproj" />
     <ProjectReference Include="..\..\..\dotnetlive.framework\src\DotNetLive.Framework\DotNetLive.Framework.csproj" />
   </ItemGroup>
 </Project>
