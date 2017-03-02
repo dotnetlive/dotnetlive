@@ -16,9 +16,9 @@
 else
 {
     <ul class="topbar-list topbar-log_reg pull-right visible-sm-block visible-md-block visible-lg-block">
-        <li class="cd-log_reg home"><a class="cd-signin" asp-controller="Account" asp-action="Login" asp-returnUrl="@currentUrl">登陆</a></li>
+        <li class="cd-log_reg home"><a class="cd-signin" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@currentUrl">登陆</a></li>
         <li class="cd-log_reg">
-            <a class="cd-signup" asp-controller="Account" asp-action="Register" asp-returnUrl="@currentUrl">注册</a>
+            <a class="cd-signup" asp-controller="Account" asp-action="Register" asp-route-returnUrl="@currentUrl">注册</a>
         </li>
     </ul>
 }
