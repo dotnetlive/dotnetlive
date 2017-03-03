@@ -9,7 +9,7 @@
     <ul class="topbar-list topbar-log_reg pull-right visible-sm-block visible-md-block visible-lg-block">
         <li class="cd-log_reg home"><a class="cd-signin" asp-area="UserCenter" >欢迎 @UserManager.GetUserName(User)!</a></li>
         <li class="cd-log_reg">
-            <a class="cd-signup" asp-controller="Account" asp-action="LogOff" asp-returnUrl="@currentUrl">注销</a>
+            <a class="cd-signup" asp-controller="Account" asp-action="LogOff" asp-route-returnUrl="@currentUrl">注销</a>
         </li>
     </ul>
 }
