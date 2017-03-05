@@ -1,5 +1,5 @@
-using DotNetLive.Framework.UserIdentity;
-using DotNetLive.Framework.WebFramework.Controllers;
+using DotNetLive.Framework.Mvc.UserIdentity;
+using DotNetLive.Framework.Mvc.WebFramework.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Options;
 
