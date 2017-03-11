@@ -10,3 +10,8 @@ https://www.myget.org/F/dotnetlive/symbols/
 ### CI版本发布
 https://www.myget.org/F/dotnetlive-ci/api/v3/index.json
 https://www.myget.org/F/dotnetlive-ci/symbols/
+
+
+## Tips
+
+* (在VS中使用Symbols文件进行源码调试)[http://docs.myget.org/docs/reference/symbols#Consuming_symbol_packages_in_Visual_Studio]
