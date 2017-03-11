@@ -6,19 +6,16 @@
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0-beta1" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+    <PackageReference Include="DotNetLive.Framework.Diagnostics.Trace" Version="1.0.0" />
+    <PackageReference Include="DotNetLive.Framework.Mvc" Version="1.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0-msbuild3-final" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\dotnetlive.framework\src\DotNetLive.Framework.Diagnostics.Trace\DotNetLive.Framework.Diagnostics.Trace.csproj" />
-    <ProjectReference Include="..\..\..\dotnetlive.framework\src\DotNetLive.Framework.Mvc\DotNetLive.Framework.Mvc.csproj" />
-    <ProjectReference Include="..\..\..\dotnetlive.framework\src\DotNetLive.Framework\DotNetLive.Framework.csproj" />
   </ItemGroup>
 </Project>
