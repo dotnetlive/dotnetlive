@@ -1,0 +1,4 @@
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=43c4b6746230b0c8e18b514b2891dc3d29cbf4ff9a5df2bd96d70fa83bb8a02d"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt=".NET Core互联网架构实战" title=".NET Core互联网架构实战"><br/>加入 .NET Core互联网架构实战 QQ群</a>
+<div><a href="https://dotnet.live/">
+进入<strong>.NET Core互联网架构实战</strong>主站</a></div><span>WEB API项目实战干货系列 .NET Core版本</span>
+<hr/>
