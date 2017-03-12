@@ -2,8 +2,8 @@
 Description=DotNet.Live ForumsWeb
 
 [Service]
-WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.forums
-ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.forums/DotNetLive.ForumsWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.forumsweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.forumsweb/DotNetLive.ForumsWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dnl-forumsweb

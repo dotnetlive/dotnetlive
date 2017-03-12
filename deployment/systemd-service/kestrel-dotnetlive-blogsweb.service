@@ -1,9 +1,9 @@
 [Unit]
-Description=DotNet.Live Blogs
+Description=DotNet.Live BlogsWeb
 
 [Service]
-WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.blogs
-ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.blogs/DotNetLive.BlogsWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.blogsweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.blogsweb/DotNetLive.BlogsWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dnl-blogsweb

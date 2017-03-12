@@ -1,9 +1,9 @@
 [Unit]
-Description=DotNet.Live Career
+Description=DotNet.Live CareerWeb
 
 [Service]
-WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.career
-ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.career/DotNetLive.CareerWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.careerweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.careerweb/DotNetLive.CareerWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dnl-careerweb

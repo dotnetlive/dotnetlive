@@ -1,9 +1,9 @@
 [Unit]
-Description=DotNet.Live Exam
+Description=DotNet.Live ExamWeb
 
 [Service]
-WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.exam
-ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.exam/DotNetLive.ExamWeb.dll
+WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.examweb
+ExecStart=/usr/local/bin/dotnet /data/dotnetlive/pubsite/dotnetlive.examweb/DotNetLive.ExamWeb.dll
 Restart=always
 RestartSec=10                                          # Restart service after 10 seconds if dotnet service crashes
 SyslogIdentifier=dnl-examweb

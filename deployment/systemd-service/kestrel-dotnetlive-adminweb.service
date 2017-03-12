@@ -1,5 +1,5 @@
 [Unit]
-Description=DotNet.Live AdminApi
+Description=DotNet.Live AdminWeb
 
 [Service]
 WorkingDirectory=/data/dotnetlive/pubsite/dotnetlive.adminweb
